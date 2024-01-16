@@ -1,95 +1,80 @@
+import styles from './page.module.scss'
 import Image from 'next/image'
-import styles from './page.module.css'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <section className={styles.logoSection}>
+        <Image 
+          src="/webcraft-duo-log.svg"
+          width={654}
+          height={300}
+          alt='Webcraft Duo Logo'
         />
-      </div>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <Image src="/top-head.svg" width={544} height={544} className={styles.topHead}/>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      <section className={styles.whoAreWe}>
+        <Image src="/our-team-image.svg" width={332} height={332} />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+        <div>
+          <h2>Who we are</h2>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Welcome to WebCraft Duo - Your Partner in Web Design for Business Success!
+            <br></br>
+            At WebCraft Duo, we create custom websites that showcase the unique essence of 
+            your business. Our team of designers and developers is committed to providing 
+            you with a visually stunning and highly functional online presence.
           </p>
-        </a>
-      </div>
+        </div>
+      </section>    
+
+      <section className={styles.whyUs}>
+        <h2>Why Us?</h2>
+        <div>
+        <Image src="/why-us.svg" width={307} height={307} />
+
+          <span>
+            <p><b>Unique Design: </b>We create custom websites that reflect the identity and values of your company.</p>
+            <p><b>Advanced Technology: </b>We utilize the latest technologies for an optimized website that is future-ready, ensuring a seamless experience on all devices.</p>
+            <p><b>Support: </b>We are here to provide assistance if needed.</p>
+
+          </span>
+        </div>
+      </section>
+
+      <section className={styles.trustUs}>
+        <h2>Trust us to build an online presence that captivates, converts, and endures. Let's build together the success of your business on the web!</h2>
+        <div>
+          <span>
+            <Image src="/red.png" width={220} height={231} />
+          </span>
+          <span>
+            <Image src="/yellow.png" width={210} height={221} />
+          </span>
+          <span>
+            <Image src="/blue.svg" width={289} height={289} />
+          </span>
+        </div>
+      </section>
+
+      <section className={styles.aboutUs}>
+        <h2>"About Us"</h2>
+        <div>
+            At WebCraft Duo, we have an experienced team with over 5 years in website creation. Our talented programmer specializes 
+            in efficient coding and development, while our lead designer brings creativity and a unique vision. We work collaboratively, 
+            merging technical and creative skills to exceed our clients' expectations. We stand out for our philosophy of constant 
+            innovation and commitment to excellence. Trust us to take your online presence to the next level!
+            <br></br>
+            <br></br>
+            Thank you for considering WebCraft Duo for your next project. We are excited about the opportunity to work with you and 
+            turn your ideas into digital reality. Contact us and discover how we can elevate your online presence to the next level!</div>
+      </section>
+
+      <section className={styles.contactUs}>
+      </section>
     </main>
   )
 }
